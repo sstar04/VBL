@@ -51,6 +51,12 @@ ENDIF("${isSystemDir}" STREQUAL "-1")
 include_directories($ENV{SPACK_TRANSITIVE_INCLUDE_PATH})
 
 endif()
+
+############## use GPU ################
+option (USE_GPU
+         "use the gpu routine implemented in GPUFunction" ON)
+
+
 ###############  end spack stuff  ##############
 # Activate concurrency?
 option(ACTIVATE_CONCURRENCY
